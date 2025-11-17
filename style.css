@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e7dba3c1;
+    margin: 0;
+    padding: 0;
+}
+.p{
+    color: rgb(232, 166, 22);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    float:middle;
+    padding: 50px;
+    margin-top: 60px;
+}
+
+.f{
+     text-align: center;
+    color: rgb(241, 112, 112);
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: block;
+    float: right;
+    padding: 70px;
+    margin-bottom: 100px;
+}
+
+button:hover{
+    background-color: #e7dba3c1;
+   
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    align-content: center;
+}
+
+.homep{
+    color: rgb(232, 166, 22);
+    font-size: 18px;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+.about{
+    color: rgb(232, 166, 22);
+    font-size: 18px;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+.number{
+    color: rgb(232, 166, 22);
+    font-size: 24px;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+}
+ul{
+    margin-top: 50px;
+    color: rgb(232, 166, 22);
+    font-weight: bold;
+    margin: 20px;
+}
+button{
+
+    color: rgb(232, 166, 22);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.contact{
+    
+}
