@@ -1,24 +1,56 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: #e7dba3c1;
+    background-color:  #0a1a2f;
+;
     margin: 0;
     padding: 0;
 }
+.hello{
+   color: #4fc3f7;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 24px;           
+    text-align: center;
+
+}
 .p{
-    color: rgb(232, 166, 22);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    float:middle;
-    padding: 50px;
-    margin-top: 60px;
+ color: #73c9f1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: auto;
+    padding: 30px;
+    text-align: center;   
+    
 }
 
-.f{
-     text-align: center;
-    color: rgb(241, 112, 112);
-    font-weight: bold;
-    margin-top: 50px;
+footer {
+    background-color: #274c55;        
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 100px;               
+}
+
+
+footer::before {
+    content: "";
+    display: block;
+    height: 0px;
+    background: #e7e0e0;            
+    margin: 1 auto 30px auto;
+    width: 100%;
+}
+
+
+footer p {
+    color: #fdf5f5;                   
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 
@@ -42,20 +74,30 @@ button:hover{
     margin-top: 20px;
     align-content: center;
 }
-
-.homep{
-    color: rgb(232, 166, 22);
-    font-size: 18px;
-    align-items: center;
-    padding: 20px;
-    margin: auto;
+.homep {
+    color: #4fc3f7;
+    font-size: 25px;
+    padding: 30px;
+    margin-top: 45px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* To truly center it both horizontally and vertically in the middle of the page */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Ensures it spans properly for text-align to work */
 }
+
+
+
 .about{
     color: rgb(232, 166, 22);
     font-size: 18px;
     align-items: center;
     padding: 20px;
     margin: auto;
+     margin-top: 80px;
 }
 .number{
     color: rgb(232, 166, 22);
@@ -64,15 +106,19 @@ button:hover{
     padding: 20px;
     margin: auto;
 }
-ul{
-    margin-top: 50px;
-    color: rgb(232, 166, 22);
-    font-weight: bold;
-    margin: 20px;
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;             
+    text-align: center;
 }
+
+
 button{
 
-    color: rgb(232, 166, 22);
+    color: #4fc3f7;
+    font-weight: bold;
     border: none;
     padding: 10px 20px;
     margin: 0 10px;
@@ -80,6 +126,31 @@ button{
     font-size: 16px;
     border-radius: 5px;
 }
-.contact{
-    
-}
+
+  .imgabt{  
+  width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    display: block;
+    float: left;
+    padding: 70px;
+    margin-bottom: 100px;
+  }
+  .skills{
+    color: #4fc3f7;
+    font-family:'Poppins', sans-serif; 
+    font-weight: 600;
+    font-size: 25px;
+    margin: 30px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .p2{
+    color: #4fc3f7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+  }
