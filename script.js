@@ -9,3 +9,6 @@ document.getElementById("contactBtn").onclick = () => {
     window.location.href = "contact.html";
 };
 
+
+
+

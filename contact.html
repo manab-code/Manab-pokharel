@@ -1,20 +1,60 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>Home - My Web Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Contact Form</title>
+    <style>
+        .error { color: red; }
+        .success { color: green; }
+    </style>
 </head>
 <body>
-   <ul class="contact">
-    <li><a href="https://www.facebook.com/manab.pokharel.2025" target="_blank">Facebook</a></li>
-    <li><a href="https://www.instagram.com/manabdgaf/" target="_blank">Instagram</a></li>
-    <li><a href="https://www.linkedin.com/in/manab-pokharel-92355a335/" target="_blank">LinkedIn</a></li>
-    <li><a href=https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox>Email</a></li>
-</ul>
 
-<button id="openInsta">Open Instagram</button>
-<button id="openFb">Open Facebook</button>
-<button id="openLinkedin">Open LinkedIn</button>
+    <h2>Contact Form</h2>
 
-<h1 class="number">+9779702610115</h1>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name"><br><br>
+
+        <input type="email" id="email" placeholder="Your Email"><br><br>
+
+        <textarea id="message" placeholder="Your Message"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="msg"></p>
+
+    <script>
+        const form = document.getElementById("contactForm");
+        const msg = document.getElementById("msg");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            // VALIDATION
+            if (name === "" || email === "" || message === "") {
+                msg.textContent = "All fields are required!";
+                msg.className = "error";
+                return;
+            }
+
+            // STORE IN LOCALSTORAGE
+            localStorage.setItem("name", name);
+            localStorage.setItem("email", email);
+            localStorage.setItem("message", message);
+
+            msg.textContent = "Form submitted! Redirecting...";
+            msg.className = "success";
+
+            // REDIRECT
+            setTimeout(() => {
+                window.location.href = "form-details.html";
+            }, 1000);
+        });
+    </script>
+
 </body>
-<script src="script2.js"></script>
+</html>
